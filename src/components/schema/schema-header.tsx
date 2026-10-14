@@ -45,7 +45,7 @@ export default function SchemaHeader() {
 
         <div className="flex items-center gap-3">
           <a
-            href="https://github.com"
+            href="https://github.com/zulian026/schemakit"
             target="_blank"
             rel="noreferrer"
             className="hidden items-center gap-2 rounded-lg border border-white/[0.09] px-3.5 py-2 text-xs text-[#d6c5a5] transition-colors hover:bg-white/[0.04] sm:inline-flex"
