@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SchemaKit
+
+A lightweight developer toolkit for generating schemas, validating JSON data, and comparing data structures.
+
+## Features
+
+- **TypeScript Generator** — Generate TypeScript interfaces and types from JSON.
+- **Zod Generator** — Generate Zod validation schemas.
+- **JSON Schema Generator** — Generate JSON Schema definitions.
+- **PostgreSQL SQL Generator** — Generate SQL table definitions from JSON objects.
+- **JSON Data Validator** — Validate JSON data against an inferred structure.
+- **Mock Data Generator** — Generate dummy records for development and testing.
+- **Schema Diff** — Compare two JSON structures and identify added, removed, and changed properties.
+
+## Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Monaco Editor
+- Zod
+- Faker.js
+- Vitest
+- Lucide React
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
 
 ```bash
+git clone <your-repository-url>
+cd schemakit
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command         | Description                  |
+| --------------- | ---------------------------- |
+| `npm run dev`   | Start the development server |
+| `npm run build` | Build for production         |
+| `npm run start` | Start the production server  |
+| `npm run lint`  | Run ESLint                   |
+| `npm run test`  | Run the Vitest test suite    |
 
-## Learn More
+## How It Works
 
-To learn more about Next.js, take a look at the following resources:
+SchemaKit uses JSON input as a reference to generate type definitions, validation schemas, SQL, and sample data. All current generation and validation features run locally in the browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Status
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+SchemaKit is an MVP. Some behavior is inferred from sample data, so generated outputs should be reviewed before being used in production systems.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Add a license before distributing this project publicly.
